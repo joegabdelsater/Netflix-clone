@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+
+.thumb {
+    height: 150px;
+    cursor: pointer;
+}
+
+.bar {
+    border-radius: 20px;
+    height: 3px;
+  
+}
+
+.progress-outer{
+    position: relative;
+    margin:0 auto;
+    margin-top:5px;
+    width:80%;
+    background-color: #c4c4c4;
+}
+
+.progress-inner{
+    background-color: $netflix-red;
+    width:40%;
+}

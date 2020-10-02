@@ -8,17 +8,17 @@ const MovieListSection = () => {
     return (
         <div className="container">
             <div className="movie-list-container">
-                <MovieList />
+                <MovieList showProgress={true} title="Continue watching for Joe"/>
             </div>
 
             <div className="movie-list-container">
-                <MovieList />
+                <MovieList title="TV Shows"/>
             </div>
             <div className="movie-list-container">
-                <MovieList />
+                <MovieList title="Trending Now" />
             </div>
             <div className="movie-list-container">
-                <MovieList />
+                <MovieList title="Watch It Again"/>
             </div>
             
         </div>
