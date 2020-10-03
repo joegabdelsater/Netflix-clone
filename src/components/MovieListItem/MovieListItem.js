@@ -118,11 +118,7 @@ class MovieListItem extends Component {
                             </div>
                             <p>47 of 56m</p>
                         </div>
-
                     </div>}
-
-
-
                 </div>
             </div>
         )

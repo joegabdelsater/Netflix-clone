@@ -46,14 +46,15 @@ h3{
     right: 0;
 }
 .arrow-container{
-    
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items:center;
     background-color:rgba(1,1,1,0.5);
     position:absolute;
-    top:0;
-    bottom:0;
+    top:50%;
+    // bottom:0;
+    transform:translate(0,-50%);
     width:50px;
 }
 
