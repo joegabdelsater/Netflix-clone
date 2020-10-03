@@ -6,7 +6,7 @@
     font-size: 1.4em;
     font-weight: 500;
     margin: 0;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
 }
 
 .slider {
@@ -26,7 +26,13 @@ h3{
 
 .list {
     overflow-x: hidden;
+    margin-bottom: -130px;
+
 }
+
+// .list:first-child(){
+//     margin-top: 0px !important;
+// }
 
 .arrow{
     color:white;
@@ -49,5 +55,13 @@ h3{
     top:0;
     bottom:0;
     width:50px;
+}
+
+.test{
+
+}
+
+.slick-track {
+   margin:184px 0px;
 }
 

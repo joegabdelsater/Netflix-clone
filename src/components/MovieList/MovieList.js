@@ -48,53 +48,24 @@ class MovieList extends Component {
         this.setState({ showNavCtrl: show });
     }
 
-    // handleModal = (positionData) => {
-    //     if (this.state.positionData !== null) {
-    //         this.setState({ positionData: null })
-    //     }
-    //     this.setPositionData(positionData);
-    // }
-
-    // setPositionData = (positionData) => {
-    //     this.setState({ modalVisible: positionData !== null })
-    //     var that = this;
-    //     setInterval(function () {
-    //         that.setState({ positionData });
-    //     }, 200)
-    // }
-
-    // showModal = () => {
-    //     if (this.state.modalVisible) {
-    //         console.log(this.state.positionData)
-    //         return <div src="https://picsum.photos/280/158" style={{
-    //             height: 500,
-    //             width: 500,
-    //             zIndex: 10,
-    //             // position: 'absolute',
-    //             // top: this.state.positionData.top - 300,
-    //             // left: this.state.positionData.left,
-    //             backgroundColor: 'red'
-    //         }} ></div>
-    //     } else {
-    //         return false;
-    //     }
-    // }
+  
     render() {
         const { showProgress, title } = this.props;
         const settings = {
             speed: 100,
             slidesToShow: 6,
             nextArrow: this.SampleNextArrow(),
-            prevArrow: this.SamplePrevArrow()
+            prevArrow: this.SamplePrevArrow(),
+            className: ".test"
         };
 
         return (
             <div className="list">
                 <h3 className="title">{title}</h3>
-                <div style={{ position: 'relative' }} onMouseEnter={() => this.handleHover(true)} onMouseLeave={() => this.handleHover(false)}>
+                <div style={{ position: 'relative',marginTop: -160 }} onMouseEnter={() => this.handleHover(true)} onMouseLeave={() => this.handleHover(false)}>
                     <Slider {...settings} ref={c => (this.slider = c)}>
                         <MovieListItem thumb={'https://picsum.photos/280/158?' + Math.random()} showProgress={showProgress} handleModal={this.handleModal} />
-                        <MovieListItem thumb={'https://picsum.photos/280/158?' + Math.random()} showProgress={showProgress} handleModal={this.handleModal} />
+                        <MovieListItem thumb={'https://picsum.photos/280/158?' + Math.random()} showProgress={showProgress} handleModal={this.handleModal} allowLarge={true}/>
                         <MovieListItem thumb={'https://picsum.photos/280/158?' + Math.random()} showProgress={showProgress} handleModal={this.handleModal} />
                         <MovieListItem thumb={'https://picsum.photos/280/158?' + Math.random()} showProgress={showProgress} handleModal={this.handleModal} />
                         <MovieListItem thumb={'https://picsum.photos/280/158?' + Math.random()} showProgress={showProgress} handleModal={this.handleModal} />
@@ -105,7 +76,6 @@ class MovieList extends Component {
                     {this.SampleNextArrow()}
                     {this.SamplePrevArrow()}
                 </div>
-                {/* { this.showModal()} */}
             </div>
 
         );

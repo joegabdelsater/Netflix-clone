@@ -1,6 +1,4 @@
 @import '../../App.scss';
-
-
 .thumb {
     height: 150px;
     cursor: pointer;
@@ -9,18 +7,90 @@
 .bar {
     border-radius: 20px;
     height: 3px;
-  
 }
 
-.progress-outer{
+.progress-outer {
     position: relative;
-    margin:0 auto;
-    margin-top:5px;
-    width:80%;
+    // margin: 0 auto;
+    margin-top: 5px;
+    // width: 80%;
+    width:75%;
     background-color: #c4c4c4;
 }
 
-.progress-inner{
+.progress-outer-new {
+    position: absolute;
+    /* margin: 0 auto; */
+    margin-top: 5px;
+    width: 80%;
+    background-color: #c4c4c4;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -10px;
+}
+
+.progress-inner {
     background-color: $netflix-red;
-    width:40%;
+    width: 40%;
+}
+
+.cta-box {
+    background-color: #222;
+    padding: 20px 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.cta {
+    color: white;
+}
+
+.cta-btn {
+    border: 2px solid #9b9797;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.cta-btn:hover {
+    border: 2px solid white;
+}
+
+.cta-box p {
+    color:white;
+    z-index: 9999999;
+}
+.left > .cta-btn{
+    margin-right: 7px;
+}
+
+.cta {
+    font-size: 25px;
+}
+
+.highlighted {
+    font-weight: 600;
+}
+
+.progress-large-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.progress-large-container p{
+    margin:0;
+    color: #b5b5b5;
+    font-weight: 500;
 }
