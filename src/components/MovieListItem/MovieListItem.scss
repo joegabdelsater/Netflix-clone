@@ -14,7 +14,7 @@
     // margin: 0 auto;
     margin-top: 5px;
     // width: 80%;
-    width:75%;
+    width: 75%;
     background-color: #c4c4c4;
 }
 
@@ -35,17 +35,16 @@
 }
 
 .cta-box {
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
     background-color: #222;
     padding: 20px 20px;
 }
 
-.button-container {
+.left {
     display: flex;
-    justify-content: space-between;
-}
-
-.left{
-    display:flex;
     justify-content: flex-start;
 }
 
@@ -69,10 +68,11 @@
 }
 
 .cta-box p {
-    color:white;
+    color: white;
     z-index: 9999999;
 }
-.left > .cta-btn{
+
+.left>.cta-btn {
     margin-right: 7px;
 }
 
@@ -87,10 +87,11 @@
 .progress-large-container {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
-.progress-large-container p{
-    margin:0;
+
+.progress-large-container p {
+    margin: 0;
     color: #b5b5b5;
     font-weight: 500;
 }
